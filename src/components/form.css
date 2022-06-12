@@ -1,0 +1,93 @@
+.container{
+    width: 100%;
+    min-height: 60vh;
+    padding: 30px 20px;
+}
+
+.row{
+    width: 100%;
+    display: flex;
+}
+
+.col{
+    flex-grow: 1;
+    min-height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.col input,select,textarea{
+    border: 1px solid grey;
+    padding: 8px 12px;
+    width: 200px;
+}
+
+.col textarea{
+    resize: none;
+    min-height: 150px;
+    height: 150px;
+}
+
+.btn-container{
+    float: right;
+    margin-right: 30px;
+    display: inline-block;
+}
+.btn-container button{
+    color: #ffffff;
+    background-color: red;
+    padding: 5px 8px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.table-wrapper{
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+    color: #ffffff;
+    background-color: red;
+    padding-left: 30px;
+}
+
+table{
+    border: 1px solid grey;
+    border-collapse: collapse;
+}
+
+th{
+    padding: 3px 5px;
+    background-color: red;
+    font-weight: 500;
+    color: white;
+}
+
+td{
+    padding: 3px 5px;
+}
+
+.col-s{
+    text-align: center;
+    color: grey;
+    font-size: 20px;
+    flex-grow: 1;
+}
+
+.col-s hr{
+    margin: 0 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .row{
+        flex-direction: column;
+    }
+    .col-s{
+        display: none;
+    }
+  }
